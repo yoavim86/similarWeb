@@ -51,8 +51,8 @@ _Instructions require prior Hadoop set up._
 4. If successful you will get similarWebResults text file in the same directory
 
 ## Python_test
-There is a script which get tags.text file and another file with name 10megaUrl.csv 
-which nedd to be downloded from https://www.domcop.com/top-10-million-domains to the same 
+There is a script urlTagGenerator.py which get the tags.text file and another file with the name 10megaUrl.csv 
+which you need to download from https://www.domcop.com/top-10-million-domains to the same 
 directory (324MB)
 
 
