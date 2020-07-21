@@ -1,3 +1,10 @@
+UrlUrlReducer.class
+TagToUrlMapper.class
+UrlUrlMapper.class
+UrlUrltop10Mapper.class
+UrlUrlTop10Partitioner.class
+UrlUrlTop10Reducer.class
 SimilarWebJob.class
-UrlTagMapper.class
-UrlTagReducer.class
+TagToUrlsReducer.class
+UrlUrlTop10Grouping.class
+UrlUrlTop10Sort.class

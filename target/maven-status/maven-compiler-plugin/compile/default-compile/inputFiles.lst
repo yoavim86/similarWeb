@@ -1,3 +1,10 @@
-/home/yoavm/eclipse-workspace/jobA/src/main/java/SimilarWebJob.java
-/home/yoavm/eclipse-workspace/jobA/src/main/java/UrlTagReducer.java
-/home/yoavm/eclipse-workspace/jobA/src/main/java/UrlTagMapper.java
+/home/yoavm/eclipse-workspace/SimilarWeb/src/main/java/UrlUrlReducer.java
+/home/yoavm/eclipse-workspace/SimilarWeb/src/main/java/UrlUrlTop10Partitioner.java
+/home/yoavm/eclipse-workspace/SimilarWeb/src/main/java/TagToUrlMapper.java
+/home/yoavm/eclipse-workspace/SimilarWeb/src/main/java/UrlUrlTop10Grouping.java
+/home/yoavm/eclipse-workspace/SimilarWeb/src/main/java/SimilarWebJob.java
+/home/yoavm/eclipse-workspace/SimilarWeb/src/main/java/UrlUrltop10Mapper.java
+/home/yoavm/eclipse-workspace/SimilarWeb/src/main/java/TagToUrlsReducer.java
+/home/yoavm/eclipse-workspace/SimilarWeb/src/main/java/UrlUrlTop10Sort.java
+/home/yoavm/eclipse-workspace/SimilarWeb/src/main/java/UrlUrlMapper.java
+/home/yoavm/eclipse-workspace/SimilarWeb/src/main/java/UrlUrlTop10Reducer.java

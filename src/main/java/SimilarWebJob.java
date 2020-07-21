@@ -9,6 +9,8 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 public class SimilarWebJob {
     public static void main(String[] args) throws Exception {
         
+    	int cores = Runtime.getRuntime().availableProcessors();
+    	
         /***** JOB 1 *****/
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "tagUrl");
@@ -25,7 +27,8 @@ public class SimilarWebJob {
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path("out1"));
 
-        job.setNumReduceTasks(1);
+        job.setNumReduceTasks(cores);
+
         boolean b1 = job.waitForCompletion(true);
         assert(b1 == true);
         		
@@ -42,7 +45,7 @@ public class SimilarWebJob {
         // Check for if we skip anything.
         FileInputFormat.addInputPath(job2, new Path("out1"));
         FileOutputFormat.setOutputPath(job2, new Path("out2"));
-		job2.setNumReduceTasks(1);
+		job2.setNumReduceTasks(cores);
 
         boolean b2 = job2.waitForCompletion(true);
         assert(b2 == true);
@@ -67,7 +70,7 @@ public class SimilarWebJob {
         FileInputFormat.addInputPath(job3, new Path("out2"));
         FileOutputFormat.setOutputPath(job3, new Path(args[1]));
 
-		job3.setNumReduceTasks(1);
+		job3.setNumReduceTasks(cores);
         System.exit(job3.waitForCompletion(true) ? 0 : 1);
     }
 }
