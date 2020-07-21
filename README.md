@@ -5,16 +5,22 @@ Calculate similar sites by count of common tags
 tsv file containing URL TAG in each line in the following structure:
 
 SiteName1 TagName1
+
 SiteName2 TagName2
+
 .
+
 .
+
 SiteNamei TagNamei
+
 
 ## Output
 Should be the top 10 similar sites per site – sorted by secondary sort.
 The output should be a text file in the following structure:
 
 SiteName1 SimilarSiteName1 Count-Of-Common-Tags
+
 SiteName2 SimilarSiteName2 Count-Of-Common-Tags
 
 For Example:
